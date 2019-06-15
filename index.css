@@ -1,0 +1,29 @@
+body {
+    background-color: powderblue;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(57, 103, 255);
+    font-family: monospace;
+    font-size: 150%;
+}
+
+h2 {
+    font-family: monospace;
+    font-size: 120%;
+}
+
+li {
+    font-family: monospace;
+    font-size: 120%;
+}
+
+h3 {
+    color:rgb(241, 86, 132);
+    font-family: monospace;
+    font-size: 130%;
+}
