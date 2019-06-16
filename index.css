@@ -1,5 +1,5 @@
 body {
-    background-color: powderblue;
+    background-color: rgb(182, 210, 226);
 }
 
 .center {
@@ -13,5 +13,31 @@ h1 {
 
 li {
     font-family: monospace;
-    font-size: 120%;
+    font-size: 18px;
 }
+
+footer {
+    left: 0;
+    bottom: 0;  /* set footer to the bottom */
+    width: 100%;
+    /* space between text */
+    padding-top:32px;
+    padding-bottom:51px;
+    /* background and text */
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+
+ .button {
+     background-color: #3f51b5;
+     color: white;
+     font-size: 20px;
+     padding: 9px 18px;
+     vertical-align:middle;
+ }
+
+ .button:hover { /* :hover = point at icon ,then icon faded*/
+    background-color: #ccc;
+    color: black;
+ }
