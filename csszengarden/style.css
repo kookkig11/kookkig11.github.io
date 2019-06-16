@@ -63,34 +63,31 @@ abbr {
 	width: 100%;
 	}
 
-header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
 header {
-	padding-top: 20px;
-	height: 87px;
+	background: url(https://scontent.fbkk2-7.fna.fbcdn.net/v/t1.0-9/64464324_3329895250369480_7513880988968026112_o.jpg?_nc_cat=106&_nc_oc=AQm2S0Ke-E4q12oJ2AXpDIgYTWIiTZBIK9vUlFaLNXspeh34fa2rVaLhQu5GH5JYJ_k&_nc_ht=scontent.fbkk2-7.fna&oh=e170aa51ae10161cdacb77cf1bf66695&oe=5D8346AD);
+	height: 350px;
+	background-size: 100%;
+	background-position: top center;
 }
+
+header h1 {
+	font-family: monospace;
+	font-size: 24px;
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
+header h2 {
+	font-family: monospace;
+	font-size: 18px;
+	color: white;
+	margin-top: 250px; 
+	margin-bottom: 40px; 
+	width: 250px;
+	float: right;
+	}
+
 
 .summary {
 	clear: both; 
