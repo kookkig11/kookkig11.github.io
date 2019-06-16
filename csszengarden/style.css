@@ -16,10 +16,8 @@ html {
 body { 
 	font: 75% georgia, sans-serif;
 	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
+	background: url(https://scontent.fbkk2-7.fna.fbcdn.net/v/t1.15752-9/s2048x2048/64245042_355135131870150_3342041828294656000_n.jpg?_nc_cat=106&_nc_oc=AQlFD9ZaO4-Rywnw4NWJwNqv1n9XUPkdSrYlEgdhRV3W3kS3Un_1hIGqK29NnyzF1r8&_nc_ht=scontent.fbkk2-7.fna&oh=83bda594ecdfd0ad211febaeda35c1fe&oe=5D8EABC2);
+	background-size: 100%
 	}
 p { 
 	margin-top: 0; 
