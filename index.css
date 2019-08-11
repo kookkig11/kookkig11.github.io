@@ -1,43 +1,55 @@
 body {
-    background-color: rgb(182, 210, 226);
+  background-color: rgb(182, 210, 226);
 }
 
 .center {
-    text-align: center;
+  text-align: center;
+}
+
+/* English */
+h1, a, li {
+  font-family: monospace;
+}
+
+/* Thai */
+h2 {
+  font-family: "Kanit", sans-serif;
 }
 
 h1 {
-    font-family: monospace;
-    font-size: 120%;
+  font-size: 120%;
 }
 
 li {
-    font-family: monospace;
-    font-size: 18px;
+  font-size: 18px;
 }
 
 footer {
-    left: 0;
-    bottom: 0;  /* set footer to the bottom */
-    width: 100%;
-    /* space between text */
-    padding-top:32px;
-    padding-bottom:51px;
-    /* background and text */
-    background-color: black;
-    color: white;
-    text-align: center;
- }
+  /* set footer to the bottom */
+  position: relative; /* hold everything with this footer */
+  bottom: 0;
+  width: 100%;
 
- .button {
-     background-color: #3f51b5;
-     color: white;
-     font-size: 20px;
-     padding: 9px 18px;
-     vertical-align:middle;
- }
+  /* space between text and edge */
+  padding-top: 40px;
+  padding-bottom: 40px;
 
- .button:hover { /* :hover = point at icon ,then icon faded*/
-    background-color: #ccc;
-    color: black;
- }
+  /* background and text */
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.button {
+  background-color: #3f51b5;
+  color: white;
+  font-size: 20px;
+  padding: 9px 18px;
+  vertical-align: middle;
+}
+
+.button:hover {
+  /* :hover = point at icon ,then icon faded*/
+  background-color: #ccc;
+  color: black;
+}
