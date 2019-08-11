@@ -5,12 +5,10 @@ body {
   text-align: center;
 }
 
-/* English */
-h1, a, li {
+h1, a, li, span {
   font-family: monospace;
 }
 
-/* Thai */
 h2 {
   font-family: "Kanit", sans-serif;
 }
@@ -18,10 +16,13 @@ h2 {
 h1 {
   font-size: 120%;
 }
-
+h2 {
+  font-size: 18px;
+}
 li {
   font-size: 18px;
 }
+
 
 /* name tag */
 .topic {
@@ -32,6 +33,12 @@ li {
 
   display: inline-block;
   padding: 5px 16px;
+}
+
+/* photo grid */
+.grid-third, .grid-quarter {
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 /* footer */
