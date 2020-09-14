@@ -1,65 +1,109 @@
+/* Initial */
+@font-face {
+  src: url(Gatkins-Demo.otf);
+  font-family: Gatkins;
+}
+@font-face {
+  src: url(Brusher.ttf);
+  font-family: Brusher;
+}
 body {
-  background-color: #c2eeef;
+  background-color: rgba(243, 219, 207, 0.929);
+  font-family: "Poppins", sans-serif;
 }
-.center {
-  text-align: center;
+* {
+  font-family: "Poppins", sans-serif;
 }
-
-h1, a, li, span {
-  font-family: monospace;
-}
-
-h2 {
-  font-family: "Kanit", sans-serif;
-}
-
 h1 {
-  font-size: 120%;
+  font-family: Brusher;
 }
 h2 {
-  font-size: 18px;
+  font-family: Gatkins;
+}
+
+
+/* Navbar */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c9bbc8;
+}
+#top_page {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
 }
 li {
-  font-size: 18px;
+  float: left;
+}
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #b6b4c2;
 }
 
 
-/* name tag */
-.topic {
-  background-color: #000;
-  color: #fff;
-  font-size: 22px;
-  letter-spacing: 4px;
-
-  display: inline-block;
-  padding: 5px 16px;
+/* About Me */
+.me {
+  width:30%;
+  float:left;
+  text-align:center
+}
+.aboutme {
+  width:70%;
+  float:left;
+  padding:14px 16px;
+}
+/* responsive with mobile */
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .me, .aboutme {
+    width:100%;
+  }
 }
 
-/* photo grid */
-.grid-third, .grid-quarter {
-  margin-left: 24px;
-  margin-right: 24px;
+
+/* Skill */
+.skillCorner {
+  text-align: none;
+  background: #E5C1CD;
+  border-radius: 20px;
+  padding: 10px 20px;
+
+  /* set width of corner : fit text */
+  display:inline-block;
+  width:auto;
+}
+.skillCorner:hover {
+  /* :hover = point at icon ,then icon faded*/
+  background-color: #C9BBC8;
 }
 
-/* footer */
+
+/* Footer */
 footer {
-  /* set footer to the bottom */
-  position: relative; /* hold everything with this footer */
+  /* hold everything with this footer */
+  /* position: relative;  */
   bottom: 0;
   width: 100%;
 
   /* space between text and edge */
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 10px 0px 0px;
 
   /* background and text */
-  background-color: black;
-  color: white;
+  background-color: #c9bbc8;
+  color: black;
   text-align: center;
 }
 
 .contactBlock {
-  background-color: #3f51b5;
+  background-color: #4d446f;
   color: white;
   font-size: 20px;
   padding: 9px 18px;
@@ -67,20 +111,19 @@ footer {
 }
 .contactBlock:hover {
   /* :hover = point at icon ,then icon faded*/
-  background-color: #ccc;
-  color: black;
+  background-color: #766d96;
 }
 
-.backTopBtn {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  padding: 8px 16px;
-  font-size: 24px;
-  color: #3f51b5;
-}
-.backTopBtn:hover {
-  background-color: #ccc;
-  color: #000;
-}
+/* .backTopBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+    padding: 8px 16px;
+    font-size: 24px;
+    color: #3f51b5;
+  }
+  .backTopBtn:hover {
+    background-color: #ccc;
+    color: #000;
+  } */
