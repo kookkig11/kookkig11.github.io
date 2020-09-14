@@ -43,15 +43,24 @@
     </section>
 
     <section id="skill">
-        <div style="width:60%; float:left; padding:25px;">
-            <h1>my coding skill</h1>
-            <p class="skillCorner">python</p>
-            <p class="skillCorner">c / c++</p>
-            <p class="skillCorner">java / java script</p>
-            <p class="skillCorner">apex [salesforce]</p>
+        <div class="codingSkill">
+            <h1>My coding skill</h1>
+            <h3><i class="fas fa-building"></i> Internship : CloudD Consulting Co., Ltd. < salesforce ></h3>
+            <h3><i class="fab fa-dev"></i> DevCamp#7th : Catify Application < Kotlin ></h3>
+            <h3><i class="fab fa-dev"></i> Workshop with HERE developer < Shopee Thailand Data Challenge 2020 ></h3>
+            <p class="skillCorner" onclick="showSkill(1)">Python</p>
+            <p class="skillCorner" onclick="showSkill(2)">C / C++</p>
+            <p class="skillCorner" onclick="showSkill(3)">Java</p>
+            <p class="skillCorner" onclick="showSkill(4)">JavaScript</p>
+            <p class="skillCorner" onclick="showSkill(5)">Html</p>
+            <p class="skillCorner" onclick="showSkill(6)">CSS</p>
+            <p class="skillCorner" onclick="showSkill(7)">Apex</p>
+            <p class="skillCorner" onclick="showSkill(8)">Salesforce</p>
+            <p class="skillCorner" onclick="showSkill(9)">SQL</p>
+            <h3 id="descriptionSkill" style="margin:0px 20px;"></h3>
         </div>
-        <div style="width:40%; float:left; text-align:center">
-            <img src="images/web_development_.svg" alt="Avatar" style="margin:25px;">
+        <div class="imgCoding">
+            <img src="images/web_development_.svg" alt="Avatar" style="margin:0px 20px;">
         </div>
     </section>
 
@@ -64,7 +73,6 @@
     
     <!-- Contact Footer -->
     <footer id="contact">
-        
         <p style="font-size: 18px">Contact</p>
         <a class="contactBlock" href="http://www.facebook.com/kookkig.wong" title="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a class="contactBlock" href="https://twitter.com/k_intrusive" title="Twitter"><i class="fab fa-twitter"></i></a>
@@ -73,6 +81,29 @@
         <h2 style="font-size: 42px">- have a good times -</h2>
     </footer>
 
+    <script>
+        //  skill button onclick
+        function showSkill(n) {
+            if (n == 1)
+                document.getElementById("descriptionSkill").innerHTML = "";
+            else if (n == 2)
+                document.getElementById("descriptionSkill").innerHTML = "Breakout Game";
+            else if (n == 3)
+                document.getElementById("descriptionSkill").innerHTML = "Project : Comsci Register , Alarm Clock";
+            else if (n == 4)
+                document.getElementById("descriptionSkill").innerHTML = "";
+            else if (n == 5)
+                document.getElementById("descriptionSkill").innerHTML = "Github.io , Apply with Aura Component";
+            else if (n == 6)
+                document.getElementById("descriptionSkill").innerHTML = "Apply with all my Html that I every write";
+            else if (n == 7)
+                document.getElementById("descriptionSkill").innerHTML = "Apply with Aura Component";
+            else if (n == 8)
+                document.getElementById("descriptionSkill").innerHTML = "Internship";
+            else if (n == 9)
+                document.getElementById("descriptionSkill").innerHTML = "";
+        }
+    </script>
 </body>
 
 </html>

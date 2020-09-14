@@ -9,16 +9,16 @@
 }
 body {
   background-color: rgba(243, 219, 207, 0.929);
-  font-family: "Poppins", sans-serif;
-}
-* {
-  font-family: "Poppins", sans-serif;
 }
 h1 {
   font-family: Brusher;
 }
 h2 {
   font-family: Gatkins;
+}
+*, h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
 }
 
 
@@ -70,6 +70,23 @@ li a:hover {
 
 
 /* Skill */
+.codingSkill {
+  width:60%;
+  float:left;
+  padding:0px 16px;
+}
+.imgCoding {
+  width:40%;
+  float:left;
+  text-align:center;
+}
+/* responsive with mobile */
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .codingSkill, .imgCoding {
+    width:100%;
+  }
+}
 .skillCorner {
   text-align: none;
   background: #E5C1CD;
@@ -84,12 +101,15 @@ li a:hover {
   /* :hover = point at icon ,then icon faded*/
   background-color: #C9BBC8;
 }
+.hidden{
+  display : none;
+}
 
 
 /* Footer */
 footer {
   /* hold everything with this footer */
-  /* position: relative;  */
+  position: relative; 
   bottom: 0;
   width: 100%;
 
@@ -101,7 +121,6 @@ footer {
   color: black;
   text-align: center;
 }
-
 .contactBlock {
   background-color: #4d446f;
   color: white;
