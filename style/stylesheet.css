@@ -7,6 +7,10 @@
   src: url(Brusher.ttf);
   font-family: Brusher;
 }
+@font-face {
+  src: url(Poppins/Poppins-Regular.ttf);
+  font-family: Poppins;
+}
 body {
   background-color: rgba(243, 219, 207, 0.929);
 }
@@ -17,7 +21,7 @@ h2 {
   font-family: Gatkins;
 }
 *, h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
   font-size: 15px;
 }
 .setTextMargin {
@@ -195,6 +199,7 @@ footer {
 .contactBlock:hover {
   /* :hover = point at icon ,then icon faded*/
   background-color: #766d96;
+  color: black;
 }
 
 /* .backTopBtn {
