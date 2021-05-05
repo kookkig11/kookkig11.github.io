@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-lists/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-calendars/styles/material.css";
+
+/* Color scheme:
+#ffc107, button
+#34577e, box input
+#234973 */
+
+.App {
+  background-color: #012d5e;
+}
+
+/* title */
+h1,
+h2 {
+  font-family: "Prompt";
+}
+h1 {
+  font-size: 18px;
+}
+h2 {
+  font-size: 16px;
+}
+
+.showData {
+  flex: 50%;
+}
+
+.inputpadding {
+  background-color: #34577e;
+}
+
+.App-page {
+  width: 100%;
+
+  display: flex;
+  flex-direction: "row";
+  min-height: 100vh;
+  color: #bbc7d4;
+}
+
+.timeline {
+  position: relative;
+  /* margin: 0 auto; */
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #234973;
+  top: 0;
+  bottom: 0;
+  margin-left: 20px;
+}
+
+.content {
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #34577e;
+  position: relative;
+  border-radius: 10px;
+  left: 50px;
+  margin-right: 60px;
+  /* width: 85%; */
+}
+
+/* Container around content */
+.container {
+  /* padding: 10px 40px; */
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 10px;
+  background-color: #ffc107;
+  border: 4px solid #234973;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Make sure that all arrows are pointing leftwards */
+.container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+.right::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+.left::after,
+.right::after {
+  left: 20px;
+}
